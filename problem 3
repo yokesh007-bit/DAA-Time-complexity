@@ -1,0 +1,18 @@
+#include <stdio.h>
+int main()
+{
+int num, i, c = 0;
+scanf("%d", &num);
+for (i = 1; i <= num; ++i)
+{
+c++; // loop test "i <= num" (true case)
+c++; // condition "num % i == 0"
+if (num % i == 0)
+{
+c++; // counts the printf statement (not printed)
+}
+}
+c++; // final failing loop test (i > num)
+printf("%d\n", c);
+return 0;
+}

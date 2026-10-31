@@ -1,0 +1,20 @@
+#include <stdio.h>
+int main()
+{
+int n;
+scanf("%d", &n);
+int i = 1;
+int s = 1;
+int counter = 2;
+while ( s <= n)
+{
+counter++;
+i++;
+counter++;
+s += i;
+counter++;
+}
+counter++;
+printf("%d", counter);
+return 0;
+}

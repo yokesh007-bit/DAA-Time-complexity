@@ -1,0 +1,12 @@
+#include <stdio.h>
+int main()
+{
+int n;
+scanf("%d",&n);
+int counter;
+if(n==1)
+counter=1;
+else
+counter=5*n+2;
+printf("%d",counter);
+}
